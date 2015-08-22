@@ -1,0 +1,9 @@
+name: WorldControl
+main: com.infinity.worldcontrol.main.WC
+version: 1.0
+author: xXInfinityXx
+description: WorldControl is a plugin that allows you to control multiple parts of your Minecraft server's world.
+commands:
+  wc:
+    description: Main command for WorldControl.
+    usage: /<command> 

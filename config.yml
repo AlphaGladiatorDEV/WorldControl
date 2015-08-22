@@ -1,0 +1,54 @@
+#Welcome to the WorldControl config!
+
+#Explosions: If set to false, explosions will be cancelled.
+Explosions: true
+
+#Fire: If set to false, nothing will light on fire by any means.
+Fire: true
+
+#MobHealth: Configure mob's healths. On the plugin's first startup, the values of mob's healths are default.
+MobHealth:
+
+  #PASSIVE
+  
+  BAT: 6
+  CHICKEN: 4
+  COW: 10
+  PIG: 10
+  RABBIT: 10
+  SHEEP: 8
+  SQUID: 10
+  VILLAGER: 20
+  
+  #NEUTRAL
+  
+  SPIDER: 16
+  ENDERMAN: 40
+  ZOMBIEPIGMAN: 20
+  
+  #HOSTILE
+  
+  BLAZE: 20
+  CREEPER: 20
+  GUARDIAN: 30
+  ENDERMITE: 8
+  GHAST: 10
+  SILVERFISH: 8
+  SKELETON: 20
+  WITCH: 26
+  ZOMBIE: 20
+  
+  #TAMABLE
+  
+  OCELOT: 10
+  
+  #UTILITY
+  
+  IRONGOLEM: 100
+  SNOWGOLEM: 4
+  
+  #BOSSES
+  
+  ENDERDRAGON: 200
+  WITHER: 300
+  
