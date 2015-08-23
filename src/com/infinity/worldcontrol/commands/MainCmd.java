@@ -146,7 +146,7 @@ public class MainCmd implements Listener, CommandExecutor{
 					if(args.length == 0){
 						p.sendMessage(wcs + ChatColor.RED + "Missing paramaters. Usage: /wc explode <x> <y> <z> <power ex.4.0> or /wc explode <power ex.4.0>");
 						return true;
-					}else if(args.length == 1){
+					}else if(args.length == 2){
 						Location ploc = p.getLocation();
 						double x = ploc.getBlockX();
 						double y = ploc.getBlockY();
@@ -154,7 +154,7 @@ public class MainCmd implements Listener, CommandExecutor{
 						expworld.createExplosion(x, y, z, Float.parseFloat(args[1]));
 						p.sendMessage("" + wcs + ChatColor.GREEN + "Explosion of " + ChatColor.GOLD + args[1] + ChatColor.GREEN + " power has been made at your location!");
 						return true;
-					}else if(args.length == 4){
+					}else if(args.length == 5){
 						double x = Double.parseDouble(args[1]);
 						double y = Double.parseDouble(args[2]);
 						double z = Double.parseDouble(args[3]);
