@@ -86,9 +86,9 @@ public class MainCmd implements Listener, CommandExecutor{
 						+ "auto-save\n"
 						+ "pvp\n"
 						+ "creload\n"
-						+ "difficulty(easy/medium/hard)\n"
+						+ "difficulty(peaceful/easy/medium/hard)\n"
 						+ "get-max-height\n"
-						+ "explode(<x> <y> <z> <power ex.4.0>/<power ex.4.0>)>\n"
+						+ "explode(<power ex.4.0> <x> <y> <z>/<power ex.4.0>)>\n"
 						+ "");
 				return true;
 			}else if(args[0].equalsIgnoreCase("creload")){
@@ -155,10 +155,10 @@ public class MainCmd implements Listener, CommandExecutor{
 						p.sendMessage("" + wcs + ChatColor.GREEN + "Explosion of " + ChatColor.GOLD + args[1] + ChatColor.GREEN + " power has been made at your location!");
 						return true;
 					}else if(args.length == 5){
-						double x = Double.parseDouble(args[1]);
-						double y = Double.parseDouble(args[2]);
-						double z = Double.parseDouble(args[3]);
-						float power = Float.parseFloat(args[4]);
+						double x = Double.parseDouble(args[2]);
+						double y = Double.parseDouble(args[3]);
+						double z = Double.parseDouble(args[4]);
+						float power = Float.parseFloat(args[1]);
 						expworld.createExplosion(x, y, z, power);
 						p.sendMessage("" + wcs + ChatColor.GREEN + "Explosion of " + ChatColor.GOLD + args[1] + ChatColor.GREEN + " power has been made at " + ChatColor.GOLD + x + " " + y + " " + z + ChatColor.GREEN + "!");
 						return true;
